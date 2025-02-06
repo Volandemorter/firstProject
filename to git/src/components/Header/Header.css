@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    height: 100px;
+    place-items: center;
+}
+
+.menu {
+    height: 100px;
+    width: 100%;
+    align-content: center;
+}
+
+.header a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 3%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.header a:hover {
+    color: rgb(4, 0, 255);
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+}
+
+.btn {
+    height: 55px;
+    width: 222px;
+    border-radius: 55px;
+    background: rgb(4, 0, 255);
+    border: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    margin-right: 2%;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 30px;
+    background: #ffffffbd;
+    filter: blur(2px);
+    transition: 1.5s;
+    transform: rotate(-20deg) translateX(-50px) translateY(-200px);
+}
+
+.btn.btn:hover::before {
+    transform: rotate(-20deg) translateX(200px);
+}
+
+.icon {
+    height: 55px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 2%;
+}
+
+.icon.telegram {
+    content: url(/icon/Telegram.png);
+}
+.icon.mail {
+    background-image: url(/icon/mail.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+}
+
+.switch {
+    width: 135px;
+    height: 55px;
+    border-radius: 55px;
+    background-color: #e7e7e7bd;
+    overflow: hidden;
+}
+
+.theme {
+    margin: 2px;
+    width: 51px;
+    height: 51px;
+    border-radius: 55px;
+    background-color: rgb(255, 255, 255);
+    filter: invert();
+    transition: 0.5s ease-in-out;
+}
+
+.theme.light {
+    background-image: url(/icon/black.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

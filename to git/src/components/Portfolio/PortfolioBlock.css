@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Prata';
+    src: url('../Fonts/Prata-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+.portfolio-block {
+    height: auto;
+}
+.first-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 56x;
+    font-family: 'Prata';
+    font-weight: 500;
+    background: linear-gradient(to right, black, rgb(6, 172, 20));
+    color: transparent;
+    background-clip: text;
+    padding-left: 10px;
+}
+.array-icon {
+    margin: 0 20px;
+    padding: 0;
+    width: 75px;
+    filter: drop-shadow(20px 20px 15px #4824ff25);
+}
+.title-border {
+    font-size: 56px;
+    font-family: 'Prata';
+    font-weight: 500;
+    color: white;
+    margin: 10px 0;
+    text-shadow: -1px -1px 0 #4824ff30, -1px -1px 0 #4824ff30,
+        -1px -1px 0 #4824ff30, -1px -1px 0 #4824ff30;
+}
+
+.gradient-part-one {
+    position: absolute;
+    background: linear-gradient(to right, transparent, white);
+    color: transparent;
+    height: 70px;
+    width: 160px;
+}
+.gradient-part-two {
+    position: absolute;
+    background: linear-gradient(to left, transparent, white);
+    color: transparent;
+    height: 70px;
+    width: 160px;
+}

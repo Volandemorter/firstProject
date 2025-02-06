@@ -1,0 +1,84 @@
+/* Welcome block */
+
+.welcome-block {
+    /* background-color: red; */
+    height: 650px;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5%; */
+}
+h1,
+h2,
+h3 {
+    text-align: justify;
+    hyphens: none;
+}
+h1 {
+    font-size: 53px;
+}
+h2 {
+    font-size: 42px;
+    font-weight: 450;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.title {
+    background: linear-gradient(
+        to right,
+        black,
+        cyan,
+        rgb(73, 137, 233),
+        rgb(148, 73, 233),
+        black
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.first-block {
+    margin: 0%;
+    /* background-color: blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding-right: 5%;
+}
+
+.main-image-box {
+    width: 45%;
+    margin-top: -3%;
+}
+.first-image-layer {
+    position: absolute;
+    height: 550px;
+}
+.second-image-layer {
+    animation: bouncing 5s linear infinite;
+    height: 550px;
+}
+@keyframes bouncing {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
